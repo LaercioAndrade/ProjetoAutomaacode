@@ -103,5 +103,13 @@ class TestPage {
         cy.screenshot()
     }
     
+    //Linguagem incorreto
+    selecionarlanguageincorreto(){
+        cy.wait(1000)
+        cy.get(testelements.languageincorreto()).contains('Portugues').click
+        cy.screenshot()
+    }
+
+   
 }
 export default TestPage;

@@ -35,3 +35,22 @@ And("clico em submit", () => {
 Then("valido a tela do Site", () =>{
      PageTest.validartela();
 })
+
+When("preencho os dados incorretamente", () => {
+      PageTest.preencherFirstName();
+      PageTest.preencherLastName();
+      PageTest.preencherAddress();
+      PageTest.preencherTelefone();
+      PageTest.selecionarSexo();
+      PageTest.selecionarHobiies();
+      PageTest.clicarlinguagem();
+      PageTest.selecionarlanguageincorreto();
+      
+
+
+})
+
+Then ("clico em submit", () => {
+     PageTest.salvarDados();
+})
+
