@@ -7,7 +7,7 @@ Feature: Realizar Cadastro na página de Automação Demo
       Then  valido a tela do Site
 
 
-  Scenario: Preencher dados incorretos
+  Scenario: Preencher dados cadastro com erro
       Given que acesso o formulário
-      When  preencho os dados incorretamente
-      Then  clico em submit
+      When  preencho os dados faltando um campo obrigatório
+      Then  apresentara um erro porque um campo obrigatório não foi preechido

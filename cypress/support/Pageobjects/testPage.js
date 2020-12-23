@@ -47,6 +47,7 @@ class TestPage {
     clicarlinguagem(){
         cy.get(testelements.clicarlanguage()).click()
         
+        
     } 
     selecionarlinguagem(){
         cy.get(testelements.selecionarlanguage()).contains('Arabic').click()
@@ -94,7 +95,6 @@ class TestPage {
          cy.get(testelements.salvar()).click()
          cy.screenshot()
          
-         
      }
     // Validar tela
     validartela(){
@@ -102,14 +102,6 @@ class TestPage {
         cy.get(testelements.validartela()).contains('Not Found')
         cy.screenshot()
     }
-    
-    //Linguagem incorreto
-    selecionarlanguageincorreto(){
-        cy.wait(1000)
-        cy.get(testelements.languageincorreto()).contains('Portugues').click
-        cy.screenshot()
-    }
-
    
 }
 export default TestPage;

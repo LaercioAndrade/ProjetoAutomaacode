@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2020-12-19T02:16:06.458Z",
-    "end": "2020-12-19T02:16:49.168Z",
-    "duration": 42710,
+    "start": "2020-12-23T23:49:57.333Z",
+    "end": "2020-12-23T23:50:45.337Z",
+    "duration": 48004,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1f077e7d-8744-4ab9-812f-0a23f4319602",
+      "uuid": "f0292fa0-9b21-407d-a4ac-3fb9fef6ca21",
       "title": "",
       "fullFile": "cypress/integration/test.feature",
       "file": "cypress/integration/test.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3a4f7443-dac9-4cc6-85d5-292b6794c997",
+          "uuid": "fe0acd6b-bad6-4140-a46e-4f00fd80b897",
           "title": "Realizar Cadastro na página de Automação Demo",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Preencher todos os campos",
               "fullTitle": "Realizar Cadastro na página de Automação Demo Preencher todos os campos",
               "timedOut": null,
-              "duration": 20819,
+              "duration": 20419,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "bb22a5f2-4a95-436e-a052-d8e61a456a08",
-              "parentUUID": "3a4f7443-dac9-4cc6-85d5-292b6794c997",
+              "uuid": "607b7c68-d30d-4f02-9938-b2c8bf0b7704",
+              "parentUUID": "fe0acd6b-bad6-4140-a46e-4f00fd80b897",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Preencher dados incorretos",
-              "fullTitle": "Realizar Cadastro na página de Automação Demo Preencher dados incorretos",
+              "title": "Preencher dados cadastro com erro",
+              "fullTitle": "Realizar Cadastro na página de Automação Demo Preencher dados cadastro com erro",
               "timedOut": null,
-              "duration": 21600,
+              "duration": 27410,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -65,26 +65,26 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {
-                "message": "AssertionError: Timed out retrying: Expected to find content: 'Portugues' within the element: <a.ui-corner-all> but never did.",
-                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Portugues' within the element: <a.ui-corner-all> but never did.\n    at TestPage.selecionarlanguageincorreto (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:180:48)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:236:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:12069:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:11410:35)",
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Not Found' within the element: <h1> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Not Found' within the element: <h1> but never did.\n    at TestPage.validartela (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:172:42)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:238:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:12065:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/test.feature:11406:35)",
                 "diff": null
               },
-              "uuid": "66fa669f-95b9-412c-8c95-4de5def21e55",
-              "parentUUID": "3a4f7443-dac9-4cc6-85d5-292b6794c997",
+              "uuid": "964d5822-011e-4cf5-8099-7a385f034fc4",
+              "parentUUID": "fe0acd6b-bad6-4140-a46e-4f00fd80b897",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bb22a5f2-4a95-436e-a052-d8e61a456a08"
+            "607b7c68-d30d-4f02-9938-b2c8bf0b7704"
           ],
           "failures": [
-            "66fa669f-95b9-412c-8c95-4de5def21e55"
+            "964d5822-011e-4cf5-8099-7a385f034fc4"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 42419,
+          "duration": 47829,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

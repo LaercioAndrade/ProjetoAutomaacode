@@ -36,7 +36,7 @@ Then("valido a tela do Site", () =>{
      PageTest.validartela();
 })
 
-When("preencho os dados incorretamente", () => {
+When("preencho os dados faltando um campo obrigatório", () => {
       PageTest.preencherFirstName();
       PageTest.preencherLastName();
       PageTest.preencherAddress();
@@ -44,13 +44,18 @@ When("preencho os dados incorretamente", () => {
       PageTest.selecionarSexo();
       PageTest.selecionarHobiies();
       PageTest.clicarlinguagem();
-      PageTest.selecionarlanguageincorreto();
-      
-
+      PageTest.selecionarlinguagem();
+      PageTest.selecionarskills();
+      PageTest.selecionarano();
+      PageTest.selecionarmes();
+      PageTest.selecionardia();
+      PageTest.preencherpassword();
+      PageTest.confirmarpassword();
 
 })
 
-Then ("clico em submit", () => {
+Then ("apresentara um erro porque um campo obrigatório não foi preechido", () => {
      PageTest.salvarDados();
+     PageTest.validartela();
 })
 

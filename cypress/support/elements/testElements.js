@@ -24,7 +24,5 @@ class testElements{
     salvar = () => {return '#submitbtn'}
     validartela = () => {return 'h1'}
 
-    languageincorreto = () => {return ':nth-child(1) > .ui-corner-all'}
-
 }
 export default testElements;
